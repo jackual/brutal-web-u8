@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+    </style>
+    <image id="image" width="224" height="252" xlink:href="/img/Balfrontower1_3056548b.png"/>
+    <image id="image-2" width="640" height="427" xlink:href="/img/alexandra-2_10.png"/>
+    <image id="image-3" width="1000" height="645" xlink:href="/img/Alexandra-and-Ainsworth-Estate-1.png"/>
+    <image id="image-4" width="1000" height="1234" xlink:href="/img/Alexandra-and-Ainsworth-Estate.png"/>
+    <image id="image-5" width="918" height="784" xlink:href="/img/londonN60.png"/>
+    <image id="image-6" width="169" height="100" xlink:href="/img/Untitled-1.png"/>
+  </defs>
+  <!--<g id="background">
+    <g id="z30xfL">
+      <image id="z30xfL-2" data-name="z30xfL" width="1920" height="1080" xlink:href="/img/v2-1.png"/>
+    </g>
+  </g>-->
+  <g id="Layer_9" data-name="Layer 9">
+    <use transform="translate(775.3 58.8) scale(.4)" xlink:href="#image-5"/>
+    <use transform="translate(969.9 60.1) scale(.4)" xlink:href="#image-5"/>
+    <use transform="translate(1024.5 60.1) scale(.4)" xlink:href="#image-5"/>
+    <use transform="translate(1289 60.1) scale(.4)" xlink:href="#image-5"/>
+    <use transform="translate(1577.5 146.1) scale(.4)" xlink:href="#image-5"/>
+  </g>
+  <g id="alex">
+    <use transform="translate(915.6 6.1) rotate(9.1) scale(.6)" xlink:href="#image-3"/>
+    <use transform="translate(886.4 179.3) rotate(9.1) scale(.6)" xlink:href="#image-3"/>
+    <use transform="translate(762.1 431.7) rotate(9.1) scale(.6)" xlink:href="#image-3"/>
+    <use transform="translate(834.9 308) rotate(9.1) scale(.6)" xlink:href="#image-3"/>
+    <use transform="translate(636.4 560.4) rotate(9.1) scale(.6)" xlink:href="#image-3"/>
+    <use transform="translate(701.6 510.9) rotate(9.1) scale(.6)" xlink:href="#image-3"/>
+  </g>
+  <g id="Layer_8" data-name="Layer 8">
+    <use transform="translate(65.7 1.2) scale(.5)" xlink:href="#image-4"/>
+    <use transform="translate(30.4 60.8) scale(.5)" xlink:href="#image-4"/>
+    <use transform="translate(-4.9 120.3) scale(.5)" xlink:href="#image-4"/>
+  </g>
+  <g id="Layer_5" data-name="Layer 5">
+    <use transform="translate(1361.6 123) scale(1.4 2.9)" xlink:href="#image"/>
+    <use transform="translate(1406.8 249) scale(1.4 2.8)" xlink:href="#image"/>
+  </g>
+  <g id="balfronleft">
+    <use transform="translate(380.6 1.3) scale(.9)" xlink:href="#image"/>
+    <use transform="translate(342.2 215.3) scale(.9)" xlink:href="#image"/>
+    <use transform="translate(357 404.8) scale(.9)" xlink:href="#image"/>
+    <use transform="translate(310.2 594.2) scale(.9)" xlink:href="#image"/>
+    <use transform="translate(310.2 514) scale(.9)" xlink:href="#image"/>
+    <use transform="translate(422.9 711.9) scale(.9)" xlink:href="#image"/>
+    <use transform="translate(305.7 852.9) scale(.9)" xlink:href="#image"/>
+  </g>
+  <g id="Layer_4" data-name="Layer 4">
+    <use transform="translate(1194.7 458.5) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1003.8 680.9) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1056.8 620) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1092 581.3) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1127.7 531.1) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1165.8 408.1) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1183.6 408.1) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1209.4 345.1) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1236.7 307.5) scale(.9)" xlink:href="#image-2"/>
+    <use transform="translate(1236.7 299.5) scale(.9)" xlink:href="#image-2"/>
+  </g>
+  <g id="Layer_6" data-name="Layer 6">
+    <use transform="translate(-4.6 807.8) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(5.9 791) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(16.3 774.2) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(26.8 757.4) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(37.3 740.7) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(47.8 723.9) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(58.2 707.1) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(68.7 690.4) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(79.2 673.6) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(89.7 656.8) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(100.2 640) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(110.6 623.3) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(121.1 606.5) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(136.8 588.7) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(152.6 571) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(168.3 553.2) scale(.6)" xlink:href="#image-2"/>
+    <use transform="translate(184 535.4) scale(.6)" xlink:href="#image-2"/>
+  </g>
+  <g id="Layer_7" data-name="Layer 7">
+    <use transform="translate(627 199) scale(2.4)" xlink:href="#image-6"/>
+    <use transform="translate(643.9 231.5) scale(2.4)" xlink:href="#image-6"/>
+  </g>
+</svg>

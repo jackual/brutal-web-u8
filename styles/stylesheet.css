@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/img/v2-1.png");
+}
+
+#bg {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+svg {
+  width: 100vw;
+}
+svg use:hover {
+  filter: invert(1);
+}/*# sourceMappingURL=stylesheet.css.map */
