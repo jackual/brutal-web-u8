@@ -1,3 +1,24 @@
+const images = {
+    map(fn) {
+        return [...document.querySelectorAll("use")].map(fn)
+    },
+    regex(use) {
+        const original = use.attributes.transform.value,
+            regex = original.match(/translate\(([-0-9.]+) ([-0-9.]+)/),
+            x = parseFloat(regex[1]),
+            y = parseFloat(regex[2])
+        return { x, y }
+    },
+    stamp(use) {
+        this.map(i => {
+            const coords = this.regex(i)
+            Object.entries(coords).map(x => {
+                i.setAttribute("data-" + x[0], x[1])
+            })
+        })
+    }
+}
+
 onload = async () => {
     const svg = await fetch("svg/v2.svg")
         .then(i => i.text())
@@ -7,28 +28,5 @@ onload = async () => {
                 .querySelector("svg")
         })
     document.getElementById("bg").appendChild(svg)
-}
-
-const images = {
-    get() {
-
-    }
-}
-
-const move = () => {
-    const images = [...document.querySelectorAll("use")]
-    images.map((i, j) => {
-        const original = i.attributes.transform.value,
-            regex = original.match(/translate\(([-0-9.]+) ([-0-9.]+)/),
-            x = parseFloat(regex[1]),
-            y = parseFloat(regex[2])
-        console.log(x, y)
-        i.attributes.transform.value = original
-            .replace(y, y * (up ? 1 + diff : 1 - diff))
-    })
-
-}
-
-onwheel = e => {
-    move(e.deltaY > 0, 0.002)
+    images.stamp()
 }
