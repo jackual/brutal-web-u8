@@ -5,19 +5,22 @@
 
 body {
   background-image: url("/img/v2-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 #bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
   overflow: hidden;
-  height: 100vh;
-  width: 100vh;
+  height: 99vh;
+  width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 svg {
   width: 100vw;
-}
-svg use:hover {
-  filter: invert(1);
 }/*# sourceMappingURL=stylesheet.css.map */
