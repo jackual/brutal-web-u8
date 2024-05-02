@@ -9,12 +9,22 @@ onload = async () => {
     document.getElementById("bg").appendChild(svg)
 }
 
-const move = (up, diff) => {
+const images = {
+    get() {
+
+    }
+}
+
+const move = () => {
     const images = [...document.querySelectorAll("use")]
     images.map((i, j) => {
         const original = i.attributes.transform.value,
-            y = Number(original.match(/translate.*? ([0-9.]+)/)[1])
-        i.attributes.transform.value = original.replace(y, y * (up ? 1 + diff : 1 - diff))
+            regex = original.match(/translate\(([-0-9.]+) ([-0-9.]+)/),
+            x = parseFloat(regex[1]),
+            y = parseFloat(regex[2])
+        console.log(x, y)
+        i.attributes.transform.value = original
+            .replace(y, y * (up ? 1 + diff : 1 - diff))
     })
 
 }
