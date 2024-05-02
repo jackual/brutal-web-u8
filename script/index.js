@@ -47,3 +47,13 @@ onload = async () => {
     document.getElementById("bg").appendChild(svg)
     images.stamp()
 }
+
+onmousemove = e => {
+    images.moveAll(data => {
+        //might need to take element as input? or add to data
+        //get centre of element
+        //calculate distance to mouse pointer
+        //find percent of total screen width
+        //move based off of this
+    })
+}
