@@ -46,12 +46,18 @@ onload = async () => {
         })
     document.getElementById("bg").appendChild(svg)
     images.stamp()
+    images.map((image, j) => {
+        image.style.display = "none"
+        setTimeout(() => {
+            image.style.display = "unset"
+        }, j * 30)
+    })
 }
 
 onmousemove = mouse => {
     images.moveAll((data, element) => {
         const clientRect = element.getBoundingClientRect()
-        const div = element.getAttribute("xlink:href") == "#image-2" ? 500 : 3000
+        const div = element.getAttribute("xlink:href") == "#image-2" ? 1000 : 3000
         const distanceY = ((mouse.clientY - data.dataY) ** 2) / div//2.086956
         return { x: data.dataX, y: data.dataY - distanceY }
         //get centre of element
