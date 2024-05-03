@@ -4,9 +4,9 @@
 }
 
 body {
-    background-image: url("/img/v2-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    //background-image: url("/img/v2-1.png");
+    //background-repeat: no-repeat;
+    //background-size: cover;
     min-height: 100vh;
 }
 
@@ -15,9 +15,15 @@ body {
     top: 0;
     z-index: -1;
     overflow: hidden;
-    height: 99vh;
     width: 100vw;
     object-fit: cover;
+    height: 100vh;
+    overflow: hidden;
+
+    svg {
+        width: 100vw;
+        background: blue;
+    }
 }
 
 h1 {
@@ -30,10 +36,5 @@ h1 {
 h2 {
     font-size: calc(6vw + 40px);
     letter-spacing: -3px;
-    color: blue;
     font-family: Arial Narrow;
-}
-
-svg {
-    width: 100vw;
 }
