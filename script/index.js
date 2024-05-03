@@ -21,7 +21,7 @@ const images = {
     },
     move(use, fn) {
         const data = this.regex(use)
-        const output = fn(data)
+        const output = fn(data, use)
         use.attributes.transform.value = use
             .attributes
             .transform
@@ -48,9 +48,12 @@ onload = async () => {
     images.stamp()
 }
 
-onmousemove = e => {
-    images.moveAll(data => {
-        //might need to take element as input? or add to data
+onmousemove = mouse => {
+    images.moveAll((data, element) => {
+        const clientRect = element.getBoundingClientRect()
+        const div = element.getAttribute("xlink:href") == "#image-2" ? 500 : 3000
+        const distanceY = ((mouse.clientY - data.dataY) ** 2) / div//2.086956
+        return { x: data.dataX, y: data.dataY - distanceY }
         //get centre of element
         //calculate distance to mouse pointer
         //find percent of total screen width
