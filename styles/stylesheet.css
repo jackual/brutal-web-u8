@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "roboto-custom";
+  src: url("../fonts/roboto-custom.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
 
 body {
   min-height: 100vh;
-  font-family: roboto-custom;
+  font-family: "roboto-custom";
 }
 
 #bg {
