@@ -51,7 +51,7 @@ onload = async () => {
                 .querySelector("svg")
         })
     document.getElementById("bg").appendChild(svg)
-    images.map((image, j) => {
+    const animation = () => images.map((image, j) => {
         image.style.display = "none"
         const coords = images.regex(image)
         image.setAttribute("data-x-original", coords.x)
@@ -60,6 +60,11 @@ onload = async () => {
             image.style.display = "unset"
         }, j * 35)
     })
+    animation()
+    document.onscroll = () => {
+        if (window.scrollY == 0)
+            animation()
+    }
     images.stamp()
 }
 
