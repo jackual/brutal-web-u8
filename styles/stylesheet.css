@@ -26,12 +26,10 @@ body {
 h1 {
   font-size: calc(8vw + 50px);
   color: white;
-  font-family: roboto-custom;
   text-decoration: underline;
 }
 
 h2 {
   font-size: calc(6vw + 40px);
   letter-spacing: -3px;
-  font-family: Arial Narrow;
 }/*# sourceMappingURL=stylesheet.css.map */

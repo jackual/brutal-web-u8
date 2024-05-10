@@ -58,20 +58,17 @@ onload = async () => {
         image.setAttribute("data-y-original", coords.y)
         setTimeout(() => {
             image.style.display = "unset"
-        }, j * 5)
+        }, j * 35)
     })
     images.stamp()
 }
 
 onmousemove = mouse => {
     images.moveAll((data, element) => {
-        const clientRect = element.getBoundingClientRect()
-        const div = element.getAttribute("xlink:href") == "#image-2" ? 1000 : 3000
-        const distanceY = ((mouse.clientY - data.dataY) ** 2) / div //2.086956
-        const output = { x: data.dataX, y: data.dataY - distanceY }
-        console.log(data.dataY, distanceY, mouse.clientY, distanceY, output.y)
-        console.log(data, output)
-        return output
+        const clientRect = element.getBoundingClientRect(),
+            div = element.getAttribute("xlink:href") == "#image-2" ? 1000 : 3000,
+            distanceY = ((mouse.clientY - data.dataY) ** 2) / div //2.086956
+        return { x: data.dataX, y: data.dataY - distanceY }
         //get centre of element
         //calculate distance to mouse pointer
         //find percent of total screen width
