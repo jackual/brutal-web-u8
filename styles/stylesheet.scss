@@ -49,6 +49,11 @@ article {
         margin-top: 2em;
     }
 
+    h3 {
+        margin: 1em;
+        text-align: center;
+    }
+
     p {
         width: 400px;
         max-width: 90vw;
@@ -84,5 +89,24 @@ article {
                 background: blue !important;
             }
         }
+    }
+
+    .chart {
+        img {
+            width: 800px;
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        display: flex;
+        width: 100vw;
+    }
+
+    small {
+        font-size: .5em;
+        text-align: center !important;
+        width: 65vw;
+        display: block;
+        margin: 1em auto;
     }
 }

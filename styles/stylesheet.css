@@ -40,6 +40,10 @@ article h2 {
   text-align: center;
   margin-top: 2em;
 }
+article h3 {
+  margin: 1em;
+  text-align: center;
+}
 article p {
   width: 400px;
   max-width: 90vw;
@@ -70,4 +74,20 @@ article #examples a:hover {
 }
 article #examples a:hover p {
   display: unset;
+}
+article .chart {
+  display: flex;
+  width: 100vw;
+}
+article .chart img {
+  width: 800px;
+  max-width: 80vw;
+  margin: auto;
+}
+article small {
+  font-size: 0.5em;
+  text-align: center !important;
+  width: 65vw;
+  display: block;
+  margin: 1em auto;
 }/*# sourceMappingURL=stylesheet.css.map */
