@@ -36,9 +36,38 @@ header h1 {
 article h1 {
   font-size: 10em;
 }
+article h2 {
+  text-align: center;
+  margin-top: 2em;
+}
 article p {
   width: 400px;
   max-width: 90vw;
   line-height: 2;
-  margin: 2em auto;
+  margin: 4em auto;
+}
+article #examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+article #examples a {
+  width: 32vw;
+  height: 20vw;
+  background-size: cover;
+  background-position: top;
+  color: white !important;
+  font-size: 2em;
+}
+article #examples a p {
+  margin: 0;
+  line-height: 1;
+  width: unset;
+  max-width: unset;
+  display: none;
+}
+article #examples a:hover {
+  background: blue !important;
+}
+article #examples a:hover p {
+  display: unset;
 }/*# sourceMappingURL=stylesheet.css.map */

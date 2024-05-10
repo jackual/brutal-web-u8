@@ -44,10 +44,45 @@ article {
         font-size: 10em;
     }
 
+    h2 {
+        text-align: center;
+        margin-top: 2em;
+    }
+
     p {
         width: 400px;
         max-width: 90vw;
         line-height: 2;
-        margin: 2em auto;
+        margin: 4em auto;
+    }
+
+    #examples {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            width: 32vw;
+            height: 20vw;
+            background-size: cover;
+            background-position: top;
+            color: white !important;
+            font-size: 2em;
+
+            p {
+                margin: 0;
+                line-height: 1;
+                width: unset;
+                max-width: unset;
+                display: none;
+            }
+
+            &:hover {
+                p {
+                    display: unset;
+                }
+
+                background: blue !important;
+            }
+        }
     }
 }
