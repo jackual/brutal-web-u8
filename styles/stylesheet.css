@@ -5,11 +5,10 @@
 
 body {
   min-height: 100vh;
+  font-family: roboto-custom;
 }
 
 #bg {
-  position: absolute;
-  top: 0;
   z-index: -1;
   overflow: hidden;
   width: 100vw;
@@ -23,13 +22,19 @@ body {
   background: blue;
 }
 
-h1 {
-  font-size: calc(8vw + 50px);
-  color: white;
-  text-decoration: underline;
+header h1 {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  text-transform: uppercase;
 }
 
-h2 {
-  font-size: calc(6vw + 40px);
-  letter-spacing: -3px;
+article h1 {
+  font-size: 10em;
+}
+article p {
+  width: 400px;
+  max-width: 90vw;
+  line-height: 2;
+  margin: 2em auto;
 }/*# sourceMappingURL=stylesheet.css.map */
