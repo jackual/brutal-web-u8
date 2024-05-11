@@ -23,7 +23,6 @@ body {
 }
 #bg svg {
   width: 100vw;
-  background: blue;
 }
 
 header h1 {
@@ -33,8 +32,11 @@ header h1 {
   text-transform: uppercase;
 }
 
-article h1 {
-  font-size: 10em;
+article marquee {
+  font-size: 2em;
+  text-transform: uppercase;
+  background: blue;
+  color: white;
 }
 article h2 {
   text-align: center;
