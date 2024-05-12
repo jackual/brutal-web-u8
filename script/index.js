@@ -69,6 +69,10 @@ onload = async () => {
 
     [...document.querySelectorAll("p")].map(x => {
         x.setAttribute("data-splitting", "")
+    });
+
+    [...document.querySelectorAll("marquee")].map(x => {
+        x.innerText = (x.innerText + " // ").repeat("30")
     })
     Splitting()
 

@@ -1,3 +1,6 @@
+$bg-col: #e64444;
+$fg-col: #46caff;
+
 @keyframes blinker {
     0% {
         opacity: 0;
@@ -58,13 +61,20 @@ article {
     marquee {
         font-size: 2em;
         text-transform: uppercase;
-        background: blue;
-        color: white;
+        background: $bg-col;
+        color: $fg-col;
+
+        &:hover {
+            cursor: default;
+            background: yellow;
+
+        }
     }
 
     h2 {
         text-align: center;
         margin-top: 2em;
+        font-family: "Druk Wide";
     }
 
     h3 {
@@ -77,7 +87,7 @@ article {
         text-transform: uppercase;
         max-width: 98vw;
         line-height: 1;
-        margin: 4em auto;
+        margin: 1em auto;
         hyphens: auto;
 
         span {
