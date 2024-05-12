@@ -1,3 +1,13 @@
+@keyframes blinker {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @font-face {
     font-family: 'roboto-custom';
     src: url("../fonts/roboto-custom.ttf") format('truetype');
@@ -14,6 +24,8 @@ body {
     //background-size: cover;
     min-height: 100vh;
     font-family: "Arial Narrow", "roboto-custom";
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 #bg {
@@ -59,10 +71,19 @@ article {
     p {
         font-size: 3em;
         text-transform: uppercase;
-        max-width: 90vw;
+        max-width: 98vw;
         line-height: 1;
         margin: 4em auto;
         hyphens: auto;
+
+        span {
+            margin: 0;
+
+            &:hover {
+                animation: blinker 0.1s linear infinite;
+                cursor: default;
+            }
+        }
     }
 
     #examples {
@@ -79,6 +100,8 @@ article {
 
             p {
                 margin: 0;
+                font-size: 1em;
+                cursor: pointer;
                 line-height: 1;
                 width: unset;
                 max-width: unset;

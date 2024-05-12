@@ -65,7 +65,12 @@ onload = async () => {
         if (window.scrollY == 0)
             animation()
     }
-    images.stamp()
+    images.stamp();
+
+    [...document.querySelectorAll("p")].map(x => {
+        x.setAttribute("data-splitting", "")
+    })
+    Splitting()
 }
 
 onmousemove = mouse => {
