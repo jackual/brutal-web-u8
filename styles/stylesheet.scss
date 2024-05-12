@@ -1,13 +1,24 @@
-$bg-col: #e64444;
-$fg-col: #46caff;
+$bg-col: pink;
+$fg-col: blue;
+$accent-col: rgb(255, 53, 161);
 
 @keyframes blinker {
     0% {
-        opacity: 0;
+        font-variation-settings: 'wght' 100; //opacity: 0;
     }
 
     100% {
-        opacity: 1;
+        font-variation-settings: 'wght' 900; //opacity: 1;
+    }
+}
+
+@keyframes strobe {
+    0% {
+        filter: invert(1);
+    }
+
+    100% {
+        filter: invert(0);
     }
 }
 
@@ -26,7 +37,7 @@ body {
     //background-repeat: no-repeat;
     //background-size: cover;
     min-height: 100vh;
-    font-family: "Arial Narrow", "roboto-custom";
+    font-family: "roc-grotesk-variable", sans-serif;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -44,64 +55,32 @@ body {
     }
 }
 
+h2,
+marquee {
+    font-variation-settings: 'wdth' 200, 'wght' 200;
+
+}
+
 header {
-    font-family: "bd-caramel-variable", sans-serif;
-    font-variation-settings: "BUBL" 100;
+    text-transform: uppercase;
+    color: $bg-col;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 10vh;
-    left: 10px;
 
     h1 {
-        @keyframes breathe {
-            0% {
-                font-variation-settings: 'BUBL' 100;
-                font-size: 14vw;
-            }
+        font-variation-settings: 'wdth' 200, 'wght' 800;
+        font-size: 8vw;
 
-            60% {
-                font-variation-settings: 'BUBL' 700;
-                font-size: 16vw;
-            }
-
-            100% {
-                font-variation-settings: 'BUBL' 100;
-                font-size: 14vw;
-            }
-        }
-
-        .char {
-            --delay: calc((var(--char-index) + 1) * 300ms);
-            animation: breathe 3000ms infinite both;
-            animation-delay: var(--delay);
-        }
-
-        $stroke-w: 5px;
-        width: 100vw;
-        left: 40px;
-        color: white;
-        font-weight: 400;
-        text-shadow: calc($stroke-w * -1) 0 black,
-        0 $stroke-w black,
-        $stroke-w 0 black,
-        0 calc($stroke-w * -1) black;
-        text-transform: UNSET;
     }
 
     h2 {
-        $stroke-w: 2px;
-        font-weight: 400;
-        font-family: "Druk Wide";
-
-        color: white;
-        text-shadow: calc($stroke-w * -1) 0 black,
-            0 $stroke-w black,
-            $stroke-w 0 black,
-            0 calc($stroke-w * -1) black;
+        background: $fg-col;
+        display: block;
     }
-
 }
 
 article {
@@ -121,7 +100,8 @@ article {
     h2 {
         text-align: center;
         margin-top: 2em;
-        font-family: "Druk Wide";
+        font-family: "roboto-custom";
+        color: $accent-col;
     }
 
     h3 {
