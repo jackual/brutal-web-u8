@@ -71,6 +71,8 @@ onload = async () => {
         x.setAttribute("data-splitting", "")
     })
     Splitting()
+
+    //todo: fix splitting
 }
 
 onmousemove = mouse => {

@@ -43,10 +43,14 @@ body {
 
 header {
     h1 {
-        position: fixed;
         top: 40px;
         left: 40px;
         text-transform: uppercase;
+        color: #46caff;
+        font-size: 13vw;
+        text-transform: UNSET;
+        font-family: "STRRETCH SANS";
+        background: #e64444;
     }
 }
 
