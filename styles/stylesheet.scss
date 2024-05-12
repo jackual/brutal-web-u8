@@ -13,7 +13,7 @@ body {
     //background-repeat: no-repeat;
     //background-size: cover;
     min-height: 100vh;
-    font-family: "roboto-custom";
+    font-family: "Arial Narrow", "roboto-custom";
 }
 
 #bg {
@@ -57,10 +57,12 @@ article {
     }
 
     p {
-        width: 400px;
+        font-size: 3em;
+        text-transform: uppercase;
         max-width: 90vw;
-        line-height: 2;
+        line-height: 1;
         margin: 4em auto;
+        hyphens: auto;
     }
 
     #examples {
