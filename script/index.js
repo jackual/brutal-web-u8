@@ -78,7 +78,7 @@ onload = async () => {
 
     //todo: fix splitting
 }
-
+/*
 onmousemove = mouse => {
     images.moveAll((data, element) => {
         const clientRect = element.getBoundingClientRect(),
@@ -91,3 +91,4 @@ onmousemove = mouse => {
         //move based off of this
     })
 }
+*/

@@ -45,16 +45,63 @@ body {
 }
 
 header {
+    font-family: "bd-caramel-variable", sans-serif;
+    font-variation-settings: "BUBL" 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 10px;
+
     h1 {
-        top: 40px;
+        @keyframes breathe {
+            0% {
+                font-variation-settings: 'BUBL' 100;
+                font-size: 14vw;
+            }
+
+            60% {
+                font-variation-settings: 'BUBL' 700;
+                font-size: 16vw;
+            }
+
+            100% {
+                font-variation-settings: 'BUBL' 100;
+                font-size: 14vw;
+            }
+        }
+
+        .char {
+            --delay: calc((var(--char-index) + 1) * 300ms);
+            animation: breathe 3000ms infinite both;
+            animation-delay: var(--delay);
+        }
+
+        $stroke-w: 5px;
+        width: 100vw;
         left: 40px;
-        text-transform: uppercase;
-        color: #46caff;
-        font-size: 13vw;
+        color: white;
+        font-weight: 400;
+        text-shadow: calc($stroke-w * -1) 0 black,
+        0 $stroke-w black,
+        $stroke-w 0 black,
+        0 calc($stroke-w * -1) black;
         text-transform: UNSET;
-        font-family: "STRRETCH SANS";
-        background: #e64444;
     }
+
+    h2 {
+        $stroke-w: 2px;
+        font-weight: 400;
+        font-family: "Druk Wide";
+
+        color: white;
+        text-shadow: calc($stroke-w * -1) 0 black,
+            0 $stroke-w black,
+            $stroke-w 0 black,
+            0 calc($stroke-w * -1) black;
+    }
+
 }
 
 article {
