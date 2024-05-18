@@ -2,36 +2,6 @@ $bg-col: rgb(228, 201, 165);
 $fg-col: #3c3425;
 $accent-col: #7b6b51;
 
-@keyframes blinker {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes strobe {
-    0% {
-        filter: invert(1);
-    }
-
-    100% {
-        filter: invert(0);
-    }
-}
-
-@keyframes weightin {
-    0% {
-        font-variation-settings: 'wght' 100;
-    }
-
-    100% {
-        font-variation-settings: 'wght' 900;
-    }
-}
-
 @font-face {
     font-family: 'roboto-custom';
     src: url("../fonts/roboto-custom.ttf") format('truetype');
@@ -47,7 +17,6 @@ body {
     //background-repeat: no-repeat;
     //background-size: cover;
     min-height: 100vh;
-    font-family: "roc-grotesk-variable", sans-serif;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -59,6 +28,7 @@ body {
     object-fit: cover;
     height: 100vh;
     overflow: hidden;
+    background: blue;
 
     svg {
         width: 100vw;
@@ -72,27 +42,13 @@ marquee {
 }
 
 header {
-    text-transform: uppercase;
-    color: $bg-col;
-    text-align: center;
     position: absolute;
-    justify-content: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 
     h1 {
-        font-variation-settings: 'wdth' 200, 'wght' 800;
         font-size: 8vw;
-        animation: weightin 1s ease;
-
-        0% {
-            font-variation-settings: 'wght' 100;
-        }
     }
 
     h2 {
-        background: $fg-col;
         display: block;
     }
 }
@@ -101,8 +57,6 @@ article {
     marquee {
         font-size: 2em;
         text-transform: uppercase;
-        background: $bg-col;
-        color: $fg-col;
         position: sticky;
         z-index: 10;
 
@@ -117,7 +71,6 @@ article {
         text-align: center;
         margin-top: 2em;
         font-family: "roboto-custom";
-        color: $accent-col;
     }
 
     h3 {
@@ -154,7 +107,6 @@ article {
             margin: 0;
 
             &:hover {
-                animation: blinker 0.1s linear infinite;
                 cursor: default;
             }
         }
