@@ -7,13 +7,14 @@ $accent-col: #7b6b51;
     src: url("../fonts/roboto-custom.ttf") format('truetype');
 }
 
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    //background-image: url("/img/v2-1.png");
+    background-image: url("/img/v2-1.png");
     //background-repeat: no-repeat;
     //background-size: cover;
     min-height: 100vh;
@@ -28,7 +29,7 @@ body {
     object-fit: cover;
     height: 100vh;
     overflow: hidden;
-    background: blue;
+    // background: blue;
 
     svg {
         width: 100vw;
@@ -46,10 +47,15 @@ header {
 
     h1 {
         font-size: 8vw;
+        color: yellow;
+        text-shadow: #000 3px 3px 0px;
+        font-smooth: never;
+        display: block;
     }
 
     h2 {
-        display: block;
+        display: inline;
+        background: white;
     }
 }
 
