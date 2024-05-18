@@ -36,6 +36,29 @@ body {
     }
 }
 
+nav {
+    a {
+        display: inline;
+        background: white;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+        font-size: calc(10px + 3vw);
+
+        &:hover {
+            font-weight: 900;
+        }
+
+        @for $i from 1 through 7 {
+            &:nth-child(#{$i}) {
+                top: calc(20vh + calc($i * 7vh));
+            }
+        }
+    }
+}
+
 h2,
 marquee {
     font-variation-settings: 'wdth' 200, 'wght' 200;
