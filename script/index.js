@@ -73,12 +73,13 @@ onload = async () => {
 
     [...document.querySelectorAll("marquee")].map(x => {
         x.innerText = (x.innerText + " // ").repeat("30")
+        x.setAttribute("scrollamount", String(parseInt(10 + (Math.random() * 15))))
     })
     Splitting()
 
     //todo: fix splitting
 }
-/*
+
 onmousemove = mouse => {
     images.moveAll((data, element) => {
         const clientRect = element.getBoundingClientRect(),
@@ -91,4 +92,3 @@ onmousemove = mouse => {
         //move based off of this
     })
 }
-*/
