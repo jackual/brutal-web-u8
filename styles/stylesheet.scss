@@ -14,12 +14,17 @@ $accent-col: #7b6b51;
 }
 
 body {
+    font-family: "roboto-custom";
     background-image: url("/img/v2-1.png");
     //background-repeat: no-repeat;
     //background-size: cover;
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+}
+
+nav button {
+    text-transform: uppercase;
 }
 
 #bg {
