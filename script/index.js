@@ -79,21 +79,28 @@ onload = async () => {
     })
     Splitting();
 
+    const config = {
+        examples: {
+            status: "　"
+        }
+    };
+
     [...document.querySelectorAll("button")].map(i => {
         i.onclick = x => {
-            newWindow({
+            newWindow(Object.assign({
                 title: x.target.innerText,
                 toolWindow: false,
                 resizable: true,
                 content: `pages/${x.target.id}.html`,
-                xhr: true,
+                id: x.target.id,
+                type: "xhr",
                 top: (window.innerWidth / 8) + (counter * 15),
                 left: (window.innerHeight / 8) + (counter * 15),
                 width: 400,
                 close: () => {
                     counter--
                 }
-            })
+            }, config[x.target.id] || {}))
             counter++
         }
         i.onmouseover = x => x.target.classList.add("default")

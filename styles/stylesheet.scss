@@ -158,37 +158,7 @@ article {
         }
     }
 
-    #examples {
-        display: flex;
-        flex-wrap: wrap;
 
-        a {
-            width: 32vw;
-            height: 20vw;
-            background-size: cover;
-            background-position: top;
-            color: white !important;
-            font-size: 2em;
-
-            p {
-                margin: 0;
-                font-size: 1em;
-                cursor: pointer;
-                line-height: 1;
-                width: unset;
-                max-width: unset;
-                display: none;
-            }
-
-            &:hover {
-                p {
-                    display: unset;
-                }
-
-                background: blue !important;
-            }
-        }
-    }
 
     .chart {
         img {
@@ -207,5 +177,37 @@ article {
         width: 65vw;
         display: block;
         margin: 1em auto;
+    }
+}
+
+#examples {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        width: 32vw;
+        height: 20vw;
+        background-size: cover;
+        background-position: top;
+        color: white !important;
+        font-size: 2em;
+
+        p {
+            margin: 0;
+            font-size: 1em;
+            cursor: pointer;
+            line-height: 1;
+            width: unset;
+            max-width: unset;
+            display: none;
+        }
+
+        &:hover {
+            p {
+                display: unset;
+            }
+
+            background: blue !important;
+        }
     }
 }
