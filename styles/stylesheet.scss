@@ -11,11 +11,12 @@ $accent-col: #7b6b51;
 * {
     margin: 0;
     padding: 0;
+    font-family: 'roboto-custom';
 }
 
 body {
-    font-family: "roboto-custom";
-    background-image: url("/img/v2-1.png");
+    //background-image: url("/img/v2-1.png");
+    background: rgb(30, 255, 0);
     //background-repeat: no-repeat;
     //background-size: cover;
     min-height: 100vh;
@@ -75,8 +76,8 @@ header {
 
     h1 {
         font-size: 8vw;
-        color: yellow;
-        text-shadow: #000 3px 3px 0px;
+        color: rgb(191, 0, 255);
+        text-shadow: rgb(255, 208, 0) 3px 3px 0px;
         font-smooth: never;
         display: block;
     }
@@ -85,6 +86,13 @@ header {
         display: inline;
         background: white;
     }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 1.2;
+    padding-top: 1em;
 }
 
 article {

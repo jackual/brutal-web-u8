@@ -1,0 +1,46 @@
+:root {
+    /* --checker: inherit;
+    --button-active-border-image: inherit;
+    --button-normal-border-image: inherit;
+    --inset-deep-border-image: inherit;
+    --button-default-border-image: inherit;
+    --button-default-active-border-image: inherit;
+    --scrollbar-arrows-ButtonText: inherit;
+    --scrollbar-arrows-GrayText: inherit;
+    --scrollbar-arrows-ButtonHilight: inherit;
+    --scrollbar-size: inherit;
+    --scrollbar-button-inner-size: inherit;
+    */
+    --ActiveTitle: red;
+    --GradientActiveTitle: red;
+    --GradientInactiveTitle: darkgray;
+    --TitleText: white;
+    --InactiveTitleText: grey;
+    --InactiveTitle: darkgray;
+    /*
+    --Background: inherit;
+    --Hilight: inherit;
+    --HilightText: inherit;
+    --Window: inherit;
+    --WindowText: inherit;
+    --Scrollbar: inherit;
+    --Menu: inherit;
+    --WindowFrame: inherit;
+    --MenuText: inherit;
+    --ActiveBorder: inherit;
+    --InactiveBorder: inherit;
+    --AppWorkspace: inherit;
+    --ButtonFace: inherit;
+    --ButtonShadow: inherit;
+    --GrayText: inherit;
+    --ButtonText: inherit;
+    --ButtonHilight: inherit;
+    --ButtonDkShadow: inherit;
+    --ButtonLight: inherit;
+    --InfoText: inherit;
+    --InfoWindow: inherit;
+    --ButtonAlternateFace: inherit;
+    --HotTrackingColor: inherit;
+    --MenuHilight: inherit;
+    --MenuBar: inherit; */
+}
