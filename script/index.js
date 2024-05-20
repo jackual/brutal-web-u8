@@ -105,6 +105,7 @@ onload = async () => {
     };
 
     [...document.querySelectorAll("button")].map(i => {
+        i.innerHTML = `<img src="img/ico/${i.id}.ico" /> ${i.innerHTML}`
         i.onclick = x => {
             newWindow(Object.assign({
                 title: x.target.innerText,

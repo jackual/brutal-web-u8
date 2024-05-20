@@ -27,6 +27,12 @@ body {
 
 nav button {
     text-transform: uppercase;
+
+    img {
+        height: calc(8px + 2.5vw);
+        width: calc(8px + 2.5vw);
+        display: inline-block;
+    }
 }
 
 #bg {
@@ -50,7 +56,6 @@ nav {
         display: inline;
         background: white;
         color: blue;
-        text-decoration: underline;
         cursor: pointer;
         position: relative;
         z-index: 3;
@@ -75,6 +80,10 @@ marquee {
 }
 
 .window-content {
+    img {
+        max-width: 100%;
+    }
+
     line-height: 1.7;
     word-spacing: -.2em;
 
