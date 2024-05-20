@@ -1,6 +1,6 @@
 const images = {
     map(fn) {
-        return [...document.querySelectorAll("use")].map(fn)
+        return [...document.querySelector("#bg").querySelectorAll("use")].map(fn)
     },
     regex(use, isOriginal = false) {
         const original = use.attributes.transform.value,
@@ -82,6 +82,25 @@ onload = async () => {
     const config = {
         examples: {
             status: "　"
+        },
+        debate: {
+            onload: async () => {
+                const svg = await fetch("svg/gbu2.svg")
+                    .then(i => i.text())
+                    .then(i => {
+                        let parser = new DOMParser()
+                        return parser.parseFromString(i, "text/xml")
+                            .querySelector("svg")
+                    }),
+                    div = document.getElementById("kennington")
+                div.appendChild(svg);
+                [...div.querySelectorAll("use")].map((i, j) => {
+                    i.style.display = "none"
+                    setTimeout(() => {
+                        i.style.display = "unset"
+                    }, (j + 1) * 59)
+                })
+            }
         }
     };
 

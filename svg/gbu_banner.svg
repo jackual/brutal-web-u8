@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 227.8px;
+      }
+
+      .cls-2 {
+        font-size: 136px;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: #ffce00;
+        font-family: RobotoMono-Bold, 'Roboto Mono';
+        font-weight: 700;
+        mix-blend-mode: color-dodge;
+      }
+    </style>
+    <image id="imag" width="605" height="807" xlink:href="img/IMG_7409.png"/>
+  </defs>
+  <g class="cls-3">
+    <g id="Layer_1" data-name="Layer 1">
+      <use transform="translate(1246.1 273)" xlink:href="#imag"/>
+      <use transform="translate(1233.5 253.9)" xlink:href="#imag"/>
+      <use transform="translate(1221 234.8)" xlink:href="#imag"/>
+      <use transform="translate(1208.4 215.7)" xlink:href="#imag"/>
+      <use transform="translate(1195.9 196.6)" xlink:href="#imag"/>
+      <use transform="translate(1183.3 177.5)" xlink:href="#imag"/>
+      <use transform="translate(1170.7 158.4)" xlink:href="#imag"/>
+      <use transform="translate(1158.2 139.3)" xlink:href="#imag"/>
+      <use transform="translate(1145.6 120.3)" xlink:href="#imag"/>
+      <use transform="translate(1133.1 101.2)" xlink:href="#imag"/>
+      <use transform="translate(1120.5 82.1)" xlink:href="#imag"/>
+      <use transform="translate(1108 63)" xlink:href="#imag"/>
+      <use transform="translate(1095.4 43.9)" xlink:href="#imag"/>
+      <use transform="translate(1082.9 24.8)" xlink:href="#imag"/>
+      <use transform="translate(1070.3 5.7)" xlink:href="#imag"/>
+      <use transform="translate(1057.7 -13.4)" xlink:href="#imag"/>
+      <text class="cls-4" transform="translate(104.3 349.5) scale(1 1)"><tspan class="cls-1" x="0" y="0">The</tspan><tspan class="cls-2" x="410.1" y="0"> </tspan><tspan class="cls-1" x="491.7" y="0">Good,</tspan><tspan class="cls-1" x="0" y="273.3">the</tspan><tspan class="cls-2" x="410.1" y="273.3"> </tspan><tspan class="cls-1" x="491.7" y="273.3">Bad,</tspan><tspan class="cls-1" x="0" y="546.7">and</tspan><tspan class="cls-2" x="410.1" y="546.7"> </tspan><tspan class="cls-1" x="491.7" y="546.7">the</tspan><tspan class="cls-2" x="901.8" y="546.7"> </tspan><tspan class="cls-1" x="983.4" y="546.7">Ugly...</tspan></text>
+    </g>
+  </g>
+</svg>
