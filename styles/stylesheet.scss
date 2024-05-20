@@ -74,6 +74,44 @@ marquee {
     top: 0;
 }
 
+.window-content {
+    line-height: 1.7;
+    word-spacing: -.2em;
+
+    #goodbad {
+        display: flex;
+        max-width: 80%;
+        margin: auto;
+
+        div:nth-child(1) li {
+            list-style-image: url("../img/ico/tick.ico");
+        }
+
+        div:nth-child(2) li {
+            list-style-image: url("../img/ico/x.ico");
+        }
+    }
+
+    p {
+        font-size: .8em;
+    }
+
+    h1 {
+        line-height: 1;
+        font-size: 1.5em;
+        font-family: serif;
+        word-spacing: 0;
+    }
+
+    h2 {
+        background: rgb(255, 0, 191);
+        display: inline-block;
+        color: white;
+        margin: 1em 0;
+        text-transform: uppercase;
+    }
+}
+
 header {
     position: absolute;
 
