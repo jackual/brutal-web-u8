@@ -42,6 +42,8 @@ const images = {
     }
 }
 
+let counter = 0
+
 onload = async () => {
     const svg = await fetch("svg/v2.svg")
         .then(i => i.text())
@@ -85,11 +87,17 @@ onload = async () => {
                 resizable: true,
                 content: `pages/${x.target.id}.html`,
                 xhr: true,
+                top: (window.innerWidth / 8) + (counter * 15),
+                left: (window.innerHeight / 8) + (counter * 15),
+                width: 400,
                 close: () => {
-                    //add animation()
+                    counter--
                 }
             })
+            counter++
         }
+        i.onmouseover = x => x.target.classList.add("default")
+        i.onmouseout = x => x.target.classList.remove("default")
     })
     //todo: fix splitting
 }
@@ -97,9 +105,9 @@ onload = async () => {
 onmousemove = mouse => {
     images.moveAll((data, element) => {
         const clientRect = element.getBoundingClientRect(),
-            div = element.getAttribute("xlink:href") == "#image-2" ? 1000 : 3000,
+            div = element.getAttribute("xlink:href") == "#image-2" ? 1000 : 1000,
             distanceY = ((mouse.clientY - data.dataY) ** 2) / div //2.086956
-        return { x: data.dataX, y: data.dataY - distanceY }
+        return { x: data.dataX, y: (data.dataY - distanceY) + 200 }
         //get centre of element
         //calculate distance to mouse pointer
         //find percent of total screen width

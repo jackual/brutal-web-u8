@@ -5,6 +5,7 @@ $accent-col: #7b6b51;
 @font-face {
     font-family: 'roboto-custom';
     src: url("../fonts/roboto-custom.ttf") format('truetype');
+    font-weight: 400;
 }
 
 
@@ -15,8 +16,8 @@ $accent-col: #7b6b51;
 }
 
 body {
-    //background-image: url("/img/v2-1.png");
-    background: rgb(30, 255, 0);
+    background-image: url("/img/v2-1.png");
+    //background: rgb(30, 255, 0);
     //background-repeat: no-repeat;
     //background-size: cover;
     min-height: 100vh;
@@ -31,6 +32,8 @@ nav button {
 #bg {
     z-index: -1;
     overflow: hidden;
+    position: absolute;
+    top: 0;
     width: 100vw;
     object-fit: cover;
     height: 100vh;
@@ -76,10 +79,11 @@ header {
 
     h1 {
         font-size: 8vw;
-        color: rgb(191, 0, 255);
-        text-shadow: rgb(255, 208, 0) 3px 3px 0px;
+        color: rgb(255, 251, 0);
+        text-shadow: rgb(0, 0, 0) 3px 3px 0px;
         font-smooth: never;
         display: block;
+        font-weight: bold;
     }
 
     h2 {

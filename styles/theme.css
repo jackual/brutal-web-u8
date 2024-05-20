@@ -11,10 +11,10 @@
     --scrollbar-size: inherit;
     --scrollbar-button-inner-size: inherit;
     */
-    --ActiveTitle: red;
-    --GradientActiveTitle: red;
+    --ActiveTitle: rgb(255, 0, 191);
+    --GradientActiveTitle: rgb(255, 0, 191);
     --GradientInactiveTitle: darkgray;
-    --TitleText: white;
+    --TitleText: rgb(30, 255, 0);
     --InactiveTitleText: grey;
     --InactiveTitle: darkgray;
     /*
