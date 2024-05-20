@@ -75,8 +75,22 @@ onload = async () => {
         x.innerText = (x.innerText + " // ").repeat("30")
         x.setAttribute("scrollamount", String(parseInt(10 + (Math.random() * 15))))
     })
-    Splitting()
+    Splitting();
 
+    [...document.querySelectorAll("button")].map(i => {
+        i.onclick = x => {
+            newWindow({
+                title: x.target.innerText,
+                toolWindow: false,
+                resizable: true,
+                content: `pages/${x.target.id}.html`,
+                xhr: true,
+                close: () => {
+                    //add animation()
+                }
+            })
+        }
+    })
     //todo: fix splitting
 }
 
