@@ -35,6 +35,14 @@ nav button {
     }
 }
 
+.tabPage {
+    display: none;
+}
+
+.show {
+    display: unset;
+}
+
 #bg {
     z-index: -1;
     overflow: hidden;
