@@ -17,6 +17,8 @@ $accent-col: #7b6b51;
 
 body {
     background-image: url("/img/v2-1.png");
+    cursor: url("../img/mouse/pointer.png"), pointer !important;
+    cursor: url("../img/mouse/default.png"), default !important;
     //background: rgb(30, 255, 0);
     //background-repeat: no-repeat;
     //background-size: cover;
@@ -31,6 +33,7 @@ p {
 
 nav button {
     text-transform: uppercase;
+    cursor: url("../img/mouse/pointer.png"), pointer !important;
 
     img {
         height: calc(8px + 2.5vw);
@@ -68,7 +71,6 @@ nav {
         display: inline;
         background: white;
         color: blue;
-        cursor: pointer;
         position: relative;
         z-index: 3;
         font-size: calc(10px + 3vw);

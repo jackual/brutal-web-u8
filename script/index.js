@@ -243,6 +243,7 @@ onload = async () => {
                 content: `pages/${x.target.id}.html`,
                 id: x.target.id,
                 type: "xhr",
+                menus: { "&File": [], "&Window": [] },
                 top: (window.innerWidth / 8) + (counter * 15),
                 left: (window.innerHeight / 8) + (counter * 15),
                 width: 400,
