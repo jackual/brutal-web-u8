@@ -167,6 +167,8 @@ onload = async () => {
                     }
                 ];
 
+                console.log(data.length);
+
                 [...document.querySelectorAll("[role=tablist]")].map(tablist => {
                     const tabs = tablist.querySelectorAll("[role=tab]");
                     [...tabs].map((tab, index) => {

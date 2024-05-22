@@ -266,3 +266,14 @@ article {
         }
     }
 }
+
+[data-id=research] {
+    table {
+        max-width: 90%;
+        width: fit-content;
+        margin: 20px;
+        display: block;
+        overflow: scroll;
+        max-height: 380px;
+    }
+}
