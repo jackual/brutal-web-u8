@@ -1,4 +1,11 @@
+<h1>Original Research</h1>
+<img style="float:right" src="img/clipart/graph.svg" />
+
 <div>
+    <h2>Google Lighthouse analysis</h2>
+    <p>Using Google’s <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a> tool I compared analysis
+        of Brutalist websites and with websites from the Alexa
+        Ranking list (most popular websites by number of users).</p>
     <menu role="tablist">
         <li role="tab" aria-selected="true"><a href="#tabs">Graph</a></li>
         <li role="tab"><a href="#tabs">Table</a></li>
@@ -6,7 +13,7 @@
     </menu>
     <div class="window" role="tabpanel">
         <div class="tabPage show">
-            <h1>Graph</h1>
+            <img alt="Lighthouse data" src="img/charts/lighthouse.png">
         </div>
         <div class="tabPage">
             <table class="interactive">
@@ -545,16 +552,21 @@
             </table>
         </div>
         <div class="tabPage">
-
+            <p>Alexa Rankings taken from <a href="https://www.wmtips.com/top/alexa-rank/">wmtips.com</a>, edited to
+                exclude pornographic websites and duplicates. Brutalist website list taken from <a
+                    href="https://repositorioinstitucional.ceu.es/bitstream/10637/10441/2/Visual_FernandoSuarez_Doxa_2019_eng.pdf">The
+                    visual language of brutalist web design</a> by Fernando Suárez-Carballo.</p>
         </div>
     </div>
 </div>
-
+<h2>Visual communication study</h2>
+<p>I built on research from Fernando Suárez-Carballo from his paper <i>The Visual Language of Brutalist Web
+        Design</i>, comparing data with websites from the Alexa Ranking to provide more perspective.</p>
 <div id="vcs">
     <div id="lpanel">
-        <label for="select">Select</label>
+        <label for="select">Select Catagory:</label>
         <select name="select"></select>
-        <label for="desc">Description</label>
+        <label for="desc">Description:</label>
         <textarea name="desc" readonly></textarea>
     </div>
     <div id="rpanel">
@@ -1436,7 +1448,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="tabPage">
+            <div id="tt" class="tabPage">
 
             </div>
         </div>

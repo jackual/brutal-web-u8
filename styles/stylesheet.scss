@@ -25,6 +25,10 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 1.4em !important;
+}
+
 nav button {
     text-transform: uppercase;
 
@@ -275,5 +279,30 @@ article {
         display: block;
         overflow: scroll;
         max-height: 380px;
+    }
+
+    #vcs {
+        display: flex;
+        max-width: 100vw;
+
+        #lpanel,
+        #rpanel {
+            padding: 10px;
+        }
+
+        #lpanel {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+
+        #rpanel {
+            width: 70%;
+        }
+
+        textarea {
+            min-height: 100px;
+            min-width: 20%;
+        }
     }
 }
