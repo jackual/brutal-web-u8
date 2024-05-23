@@ -257,7 +257,7 @@ onload = async () => {
         i.onmouseout = x => x.target.classList.remove("default")
     })
 
-    document.querySelector("#research").click()
+    document.querySelector("#further_reading").click()
     //todo: fix splitting
 }
 
